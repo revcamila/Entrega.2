@@ -78,8 +78,7 @@ body {
 
 .hero-text p {
     max-width: 450px;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
 }
 
@@ -195,5 +194,4 @@ footer {
     gap: 50px;
     flex-direction: row;
     padding: 3rem 7rem 10rem 7rem;
-    
 }
