@@ -149,6 +149,7 @@ body {
 
 .servicios p {
   padding-top: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 .servicio {
@@ -172,6 +173,6 @@ footer {
     background-color: black;
     color: white;
     margin: 0 auto;
-    padding-top: 2rem;
+    padding: 2rem 0 2rem 0;
     text-align: center;
 }
