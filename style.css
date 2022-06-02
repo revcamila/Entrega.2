@@ -138,18 +138,18 @@ body {
 /*Seccion 2 Servicios */
 
 .servicios {
- text-align: center;
- justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .servicio-title {
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
 .servicios p {
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .servicio {
@@ -166,7 +166,6 @@ body {
     flex-direction: column;
     gap: 5rem;
     padding-bottom: 10rem;
-
 }
 
 footer {
@@ -175,4 +174,26 @@ footer {
     margin: 0 auto;
     padding: 2rem 0 2rem 0;
     text-align: center;
+}
+
+/* Seccion 3 How */
+
+.how-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.how-img {
+    width: 100px;
+    height: 150px;
+    align-items: center;
+}
+
+.how-container {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    padding: 3rem 7rem 10rem 7rem;
+    
 }
