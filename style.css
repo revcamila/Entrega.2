@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 * {
     margin: 0;
@@ -8,11 +8,15 @@
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: regular;
 }
+
+/* Navbar */
 
 .logo {
     height: 100%;
+    padding-left: 1.5rem;
 }
 
 .header {
@@ -42,11 +46,28 @@ body {
     color: darkred;
 }
 
+/*Navbar terminado */
+
+/*Seccion 1*/
+
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    padding-top: 1rem;
+}
+
+.hero-text h1 {
+    padding-top: 150px;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.hero p {
+    padding-top: 20px;
 }
 
 .hero-text {
@@ -55,12 +76,11 @@ body {
     gap: 25px;
 }
 
-.hero-text h1 {
-    gap: 20px;
-}
-
 .hero-text p {
     max-width: 450px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
 }
 
 .hero-text a {
@@ -92,8 +112,9 @@ body {
 }
 
 .section-img {
-    height: 300px;
+    height: 400px;
     width: 500px;
+    padding-top: 8rem;
 }
 
 .text__btns {
@@ -112,4 +133,45 @@ body {
     line-height: 30px;
     padding: 100px 150px 150px 100px;
     color: dimgray;
+}
+
+/*Seccion 2 Servicios */
+
+.servicios {
+ text-align: center;
+ justify-content: center;
+}
+
+.servicio-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.servicios p {
+  padding-top: 1.5rem;
+}
+
+.servicio {
+    font-size: 15px;
+}
+
+.servicio-img {
+    width: 100px;
+    height: 150px;
+}
+
+.servicios-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 10rem;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
 }
