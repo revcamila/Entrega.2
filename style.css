@@ -175,6 +175,10 @@ footer {
     text-align: center;
 }
 
+footer h2 {
+    text-transform: uppercase;
+}
+
 /* Seccion 3 How */
 
 .how-title {
@@ -186,7 +190,6 @@ footer {
 .how-img {
     width: 100px;
     height: 150px;
-    align-items: center;
 }
 
 .how-container {
