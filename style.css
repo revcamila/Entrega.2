@@ -13,6 +13,9 @@ body {
 }
 
 /* Navbar */
+.btn-container {
+    display: none;
+}
 
 .logo {
     height: 100%;
@@ -52,48 +55,71 @@ body {
 
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     padding-top: 1rem;
-}
-
-.hero-text h1 {
-    padding-top: 150px;
-    gap: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-
-.hero p {
-    padding-top: 20px;
-}
-
-.hero-text {
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
 
-.hero-text p {
-    max-width: 450px;
-    text-align: left;
+.hero h1 {
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.hero-container p {
+    font-size: 20px;
+    text-align: center;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
-.hero-text a {
+.hero-container a {
+    align-items: center;
+    text-align: center;
     text-decoration: none;
-    padding: auto;
-    margin: auto;
-    display: inline-block;
+    margin: 0.5rem 0 1rem 10rem;
+    padding-left: 4rem;
+    justify-content: center;
+    /*margin: auto;*/
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero-img {
+    height: auto;
+    width: 30%;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
-    border: 2px solid grey;
-    padding: 1rem 1.3rem;
-    border-radius: 8px;
-    font-weight: 600;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .btn:hover {
@@ -110,16 +136,9 @@ body {
     color: whitesmoke;
 }
 
-.section-img {
-    height: 400px;
-    width: 500px;
-    padding-top: 8rem;
-}
-
 .text__btns {
-    margin-top: 1rem;
+    margin: 0 auto;
     display: flex;
-    gap: 10px;
 }
 
 .hero__lorem {
@@ -133,6 +152,7 @@ body {
     padding: 100px 150px 150px 100px;
     color: dimgray;
 }
+
 
 /*Seccion 2 Servicios */
 
@@ -167,16 +187,38 @@ body {
     padding-bottom: 10rem;
 }
 
-footer {
-    background-color: black;
-    color: white;
+.contacto {
+    font-weight: bold;
     margin: 0 auto;
     padding: 2rem 0 2rem 0;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-footer h2 {
+.contact-title {
     text-transform: uppercase;
+    padding-bottom: 1rem;
+    font-size: 40px;
+}
+
+.mapa {
+    padding-top: 70px;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: black;
+    color: white;
+}
+
+footer img {
+    width: 100px;
+    height: 50px;
 }
 
 /* Seccion 3 How */
@@ -198,6 +240,27 @@ footer h2 {
     flex-direction: row;
     padding: 3rem 7rem 10rem 7rem;
 }
+
+
+.clients-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.clients-container {
+    display: flex;
+    gap: 14rem;
+    flex-direction: row;
+    padding: 3rem 9rem 5rem 7rem;
+    justify-content: center;
+}
+
+.clients-img {
+    height: 200px;
+    width: 300px;
+}
+
 
 /* Aún los media queries no están terminados */
 /** Problema con el posicionamiento de la imagen **/

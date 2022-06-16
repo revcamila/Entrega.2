@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Landing Page</title>
 </head>
 
@@ -18,8 +19,8 @@
                 <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                 <!-- menu bars -->
-                 <div class="btn-container">
+                <!-- menu bars -->
+                <div class="btn-container">
                     <a href="#"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </ul>
@@ -31,22 +32,25 @@
     <main>
         <!--Seccion 1-->
         <section class="hero">
-            <div class="hero-text">
-                <h1>
-                    Estudiante de Desarrollo FullStack &#128187
-                </h1>
+            <h1 class= "animate__animated animate__zoomIn">
+                Web Development & Testing Services
+            </h1>
+            <div class="hero-container">
+
+                <div class="hero-img">
+                    <img src="./img/112-installing.png" alt="112-installing">
+                </div>
                 <p>Mi nombre es Camila &#128105, tengo 28 años. Soy QA Analyst&#128270&#128030 y actualmente me
                     encuentro aprendiendo FrontEnd
-                    Development en el Coding Bootcamp de NUCBA. </p>
-                <p>&#128205 Buenos Aires, Argentina.</p>
+                    Development en el Coding Bootcamp de NUCBA.
+                    <br>&#128205 Buenos Aires, Argentina </br>
+                </p>
                 <div class="text__btns">
                     <a href="#" class="btn btn__cta">GitHub</a>
                     <a href="#" class="btn btn__more">LinkedIn</a>
                 </div>
             </div>
-            <div class="hero-img">
-                <img src="./img/undraw_Gaming_re_cma2.png" class="section-img">
-            </div>
+
         </section>
 
         <section class="hero__lorem">
@@ -56,28 +60,29 @@
         <!--Seccion 2-->
         <section class="servicios">
             <div class="servicio">
-            <h2 class="servicio-title">Servicios</h2>
-            <p>Algunos de los servicios que brindamos:</p>
-            <div class="servicios-container">
-                <div class="servicio-1">
-                    <img src="./img/bug-solid.svg" class="servicio-img" />
-                    <h2>Manual Testing</h2>
-                    <p>Servicio de Manual Testing para evitar que todos esos errores lleguen a producción y se pudra
-                        todo.</p>
-                </div>
-                <div class="servicio-2">
-                    <img src="./img/laptop-code-solid.svg" class="servicio-img" />
-                    <h2>Desarrollo Web</h2>
-                    <p>¡Te ayudamos a armar tu página web!</p>
-                </div>
-                <div class="servicio-3">
-                    <img src="./img/person-chalkboard-solid.svg" class="servicio-img" />
-                    <h2>Clases de Inglés</h2>
-                    <p>¡Nunca es tarde para aprender algo nuevo o mejorarlo! Brindamos clases de Inglés para que sigas
-                        mejorando tus skills.</p>
+                <h2 class="servicio-title">Servicios</h2>
+                <p>Algunos de los servicios que brindamos:</p>
+                <div class="servicios-container">
+                    <div class="servicio-1">
+                        <img src="./img/bug-solid.svg" class="servicio-img" />
+                        <h2>Manual Testing</h2>
+                        <p>Servicio de Manual Testing para evitar que todos esos errores lleguen a producción y se pudra
+                            todo.</p>
+                    </div>
+                    <div class="servicio-2">
+                        <img src="./img/laptop-code-solid.svg" class="servicio-img" />
+                        <h2>Desarrollo Web</h2>
+                        <p>¡Te ayudamos a armar tu página web!</p>
+                    </div>
+                    <div class="servicio-3">
+                        <img src="./img/person-chalkboard-solid.svg" class="servicio-img" />
+                        <h2>Clases de Inglés</h2>
+                        <p>¡Nunca es tarde para aprender algo nuevo o mejorarlo! Brindamos clases de Inglés para que
+                            sigas
+                            mejorando tus skills.</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
         <!--Seccion 3-->
         <section class="how">
@@ -91,7 +96,8 @@
                 <div class="how-2">
                     <img src="./img/comment-dots-regular.svg" class="how-img" />
                     <h2>Desarrollo Web</h2>
-                    <p>Te ayudamos a maquetar tu página web utilizando lenguajes de marcado como HTML y hojas de estilo en
+                    <p>Te ayudamos a maquetar tu página web utilizando lenguajes de marcado como HTML y hojas de estilo
+                        en
                         cascada como CSS.</p>
                 </div>
                 <div class="how-3">
@@ -102,15 +108,38 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="info-container">
-            <div class="contacto">
-                <h2>Contacto</h2>
-                <a href="#">0800-666</a>
-                <p>Calle Falsa 123</p>
+    <!--Section 4 -->
+    <section class="clients">
+        <h2 class="clients-title">Nuestros clientes</h2>
+        <div class="clients-container">
+            <div class="clients-1">
+                <img src="./img/mercadolibre.png" class="clients-img" />
+            </div>
+            <div class="clients-2">
+                <img src="./img/airbnb.png" class="clients-img" />
+            </div>
+            <div class="clients-3">
+                <img src="./img/despegar.png" class="clients-img" />
             </div>
         </div>
-        <p>Hecho con ❤ por Camila</p>
+    </section>
+
+    <!--- Section 5 --->
+    <div class="contacto">
+        <div class="info-container">
+            <h2 class="contact-title">Contacto</h2>
+            <a href="#">0800-666</a>
+            <p>Calle Falsa 123</p>
+            <p>revainera.camila@gmail.com</p>
+            <div class="mapa"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155959.15242779092!2d4.763875117533744!3d52.35479253660699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2zw4Ftc3RlcmRhbSwgUGHDrXNlcyBCYWpvcw!5e0!3m2!1ses!2sar!4v1655296345330!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </div>
+    <footer>
+        <img src="./img/logo.png" alt="Logo" class="logo" />
+        <p>Hecho por Camila. All rights reserved &#128123;</p>
     </footer>
 </body>
 
