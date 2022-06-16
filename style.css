@@ -129,6 +129,9 @@ img {
 .btn__cta {
     background-color: blueviolet;
     color: whitesmoke;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .btn__more {
@@ -262,9 +265,7 @@ footer img {
 }
 
 
-/* Aún los media queries no están terminados */
-/** Problema con el posicionamiento de la imagen **/
-
+/* FALTA TERMINAR EL RESPONSIVE */
 @media only screen and (max-width: 768px) {
 
     header {
@@ -301,6 +302,11 @@ footer img {
         font-size: 2rem;
         color: white;
         padding-left: 2rem;
+        display: block;
+    }
+
+    nav {
+        display: block;
     }
 
     .hero {
@@ -309,43 +315,45 @@ footer img {
         justify-content: center;
         align-items: center;
     }
+    
 
-    .hero-text {
-        display: flex;
-        flex-direction: column;
-        max-height: 10px;
-        padding: 2rem;
-        text-align: center;
-        font-size: 1rem;
-        color: black;
-        max-width: 300px;
-        margin: 1rem auto 10rem auto;
-        max-width: 100%;
-
+    .hero-container {
+        width: 100vh;
     }
 
-    /** Se superpone el texto con la imagen **/
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .hero-img {
         width: 100%;
         height: auto;
         float: inline-end;
+        max-width: fit-content;
+    }
+
+    .hero-container p {
+        align-items: center;
     }
 
     .section-img {
         max-width: 100%;
         position: relative;
-        top: -100px;
         float: inline-end;
     }
 
     .how-container {
+        display: flex;
         flex-direction: column;
         padding: 3rem 0 10rem 0;
     }
 
     .how-container p {
         padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .how-img {
@@ -368,5 +376,20 @@ footer img {
     .servicio-title {
         padding-top: 2rem;
         font-size: 30px;
+    }
+
+    .clients-title {
+        padding-top: 2rem;
+        font-size: 30px;
+    }
+
+    .clients-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn__cta {
+        display: flex;
+        flex-direction: column;
     }
 }
